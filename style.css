@@ -67,7 +67,6 @@ a .navbar-brand {
 }
 .row {
     margin-right: 15px;
-    margin-left: 15px;
 }
 .jumbotron {
     margin-bottom: 30px;
@@ -115,13 +114,13 @@ td>a {
 }
 table {
     font-size: 12px;
-    width: ;
 }
 .col-md-4 {
+    display: flex;
+    flex-direction: column;
     width: 33.33%;
     padding-left: 15px;
     padding-right: 15px;
-    float: left;
 }
 .table {
     width: 100%;
@@ -139,3 +138,13 @@ footer {
     margin: 55px 0 45px 0;
 }
     
+.row-content {
+    display:flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+@media screen and (max-width: 1000px) {
+    .row-content {
+        flex-direction: column;
+    }
+}
